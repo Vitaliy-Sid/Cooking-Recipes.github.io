@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кулинарные Рецепты</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    background: linear-gradient(90deg, #ff6f61, #ff9471);
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+nav a:hover {
+    background-color: #ff6f61;
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.recipe {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.recipe img {
+    float: left;
+    margin-right: 15px;
+    border-radius: 5px;
+    max-width: 120px;
+}
+.recipe h2 {
+    color: #ff6f61;
+    margin: 0 0 10px;
+}
+.ingredients, .instructions {
+    margin-top: 10px;
+    clear: both;
+}
+.ingredients ul, .instructions ol {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.favorites {
+    margin-top: 20px;
+}
+.favorites h3 {
+    margin-bottom: 10px;
+}
+.favorites ul {
+    list-style-type: none;
+    padding: 0;
+}
+.favorites li {
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    .recipe img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Добро пожаловать на сайт кулинарных рецептов!</h1>
+    <p>Откройте для себя вкусные блюда и напитки на любой вкус.</p>
+</header>
+
+<nav>
+    <a href="#main-dishes">Основные блюда</a>
+    <a href="#desserts">Десерты</a>
+    <a href="#drinks">Напитки</a>
+    
+</nav>
+
+<main>
+    <section id="main-dishes">
+        <h2>Основные блюда</h2>
+        <div class="recipe">
+            <img src="XXL_height.webp.jpg" alt="Борщ">
+            <h2>Борщ</h2>
+            <div class="ingredients">
+                <h3>Ингредиенты:</h3>
+                <ul>
+                    <li>500 г говядины</li>
+                    <li>2 картофелины</li>
+                    <li>1 свекла</li>
+                    <li>2 моркови</li>
+                    <li>150 г капусты</li>
+                    <li>1 луковица</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Инструкция:</h3>
+                <ol>
+                    <li>Сварите бульон на говядине.</li>
+                    <li>Добавьте нарезанные овощи поочередно.</li>
+                    <li>Тушите до готовности и подавайте с зеленью и сметаной.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe">
+            <img src="plov.jpg" alt="Плов">
+            <h2>Плов</h2>
+            <div class="ingredients">
+                <h3>Ингредиенты:</h3>
+                <ul>
+                    <li>500 г риса</li>
+                    <li>300 г баранины</li>
+                    <li>2 моркови</li>
+                    <li>1 луковица</li>
+                    <li>50 мл растительного масла</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Инструкция:</h3>
+                <ol>
+                    <li>Обжарьте мясо и овощи.</li>
+                    <li>Добавьте рис и воду в соотношении 1:2.</li>
+                    <li>Тушите на слабом огне до готовности.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe">
+            <img src="hahlik.webp.jpg" alt="Шашлык">
+            <h2>Шашлык</h2>
+            <div class="ingredients">
+                <h3>Ингредиенты:</h3>
+                <ul>
+                    <li>1 кг свинины</li>
+                    <li>3 луковицы</li>
+                    <li>100 мл уксуса</li>
+                    <li>Специи для мяса</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Инструкция:</h3>
+                <ol>
+                    <li>Маринуйте мясо с луком и уксусом.</li>
+                    <li>Насадите кусочки на шампуры.</li>
+                    <li>Жарьте на углях до румяной корочки.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="desserts">
+        <h2>Десерты</h2>
+        <div class="recipe">
+            <img src="tiramisu.webp.jpg" alt="Тирамису">
+            <h2>Тирамису</h2>
+            <div class="ingredients">
+                <h3>Ингредиенты:</h3>
+                <ul>
+                    <li>200 г печенья Савоярди</li>
+                    <li>250 г маскарпоне</li>
+                    <li>2 яйца</li>
+                    <li>50 г сахара</li>
+                    <li>150 мл кофе</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Инструкция:</h3>
+                <ol>
+                    <li>Смешайте маскарпоне с сахаром и яйцами.</li>
+                    <li>Окуните печенье в кофе и уложите слоями.</li>
+                    <li>Смажьте кремом и охладите.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe">
+            <img src="napolion.jpg" alt="Наполеон">
+            <h2>Наполеон</h2>
+            <div class="ingredients">
+                <h3>Ингредиенты:</h3>
+                <ul>
+                    <li>500 г слоеного теста</li>
+                    <li>1 л молока</li>
+                    <li>200 г сахара</li>
+                    <li>4 яйца</li>
+                    <li>100 г муки</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Инструкция:</h3>
+                <ol>
+                    <li>Испеките коржи из теста.</li>
+                    <li>Приготовьте заварной крем.</li>
+                    <li>Соберите торт, чередуя коржи и крем.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="drinks">
+    <h2>Напитки</h2>
+    <div class="recipe">
+        <img src="limonad.webp.jpg" alt="Освежающий лимонад">
+        <h2>Освежающий лимонад</h2>
+        <div class="ingredients">
+            <h3>Ингредиенты:</h3>
+            <ul>
+                <li>4 лимона</li>
+                <li>100 г сахара</li>
+                <li>1 литр воды</li>
+                <li>Лед</li>
+                <li>Мята (по желанию)</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h3>Инструкция:</h3>
+            <ol>
+                <li>Выжмите сок из лимонов.</li>
+                <li>Растворите сахар в теплой воде, затем добавьте лимонный сок.</li>
+                <li>Охладите напиток, добавьте лед и мяту.</li>
+                <li>Подавайте охлажденным.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <img src="mohito.webp.jpg" alt="Мятный мохито">
+        <h2>Мятный мохито</h2>
+        <div class="ingredients">
+            <h3>Ингредиенты:</h3>
+            <ul>
+                <li>2 лайма</li>
+                <li>10 листочков мяты</li>
+                <li>50 мл сахарного сиропа</li>
+                <li>200 мл газированной воды</li>
+                <li>Лед</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h3>Инструкция:</h3>
+            <ol>
+                <li>Нарежьте лайм дольками и поместите в стакан.</li>
+                <li>Добавьте мяту и слегка разомните их.</li>
+                <li>Влейте сахарный сироп и добавьте лед.</li>
+                <li>Залейте газированной водой и хорошо перемешайте.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <img src="hot-chocolate.webp.jpg" alt="Горячий шоколад">
+        <h2>Горячий шоколад</h2>
+        <div class="ingredients">
+            <h3>Ингредиенты:</h3>
+            <ul>
+                <li>500 мл молока</li>
+                <li>100 г темного шоколада</li>
+                <li>2 ст. л. сахара</li>
+                <li>1 ч. л. ванильного экстракта</li>
+                <li>Взбитые сливки (по желанию)</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h3>Инструкция:</h3>
+            <ol>
+                <li>Нагрейте молоко в небольшой кастрюле.</li>
+                <li>Добавьте кусочки шоколада и перемешивайте, пока он не растает.</li>
+                <li>Добавьте сахар и ванильный экстракт.</li>
+                <li>Перелейте в чашки и украсьте взбитыми сливками.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe">
+        <img src="smoozi.jpg" alt="Ягодный смузи">
+        <h2>Ягодный смузи</h2>
+        <div class="ingredients">
+            <h3>Ингредиенты:</h3>
+            <ul>
+                <li>200 г свежих или замороженных ягод</li>
+                <li>1 банан</li>
+                <li>200 мл йогурта</li>
+                <li>100 мл апельсинового сока</li>
+                <li>Мед (по желанию)</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h3>Инструкция:</h3>
+            <ol>
+                <li>Смешайте все ингредиенты в блендере.</li>
+                <li>Измельчайте до однородной массы.</li>
+                <li>Перелейте в стаканы и сразу подавайте.</li>
+            </ol>
+        </div>
+    </div>
+</section>
